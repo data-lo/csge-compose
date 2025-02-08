@@ -1,6 +1,6 @@
 services:
   frontend: 
-    image: dataloplatforms/csge-frontend:1.0.0
+    image: dataloplatforms/csge-frontend:ARM-1.0.0
     ports:
       - "3000:3000"
     env_file:
@@ -11,7 +11,7 @@ services:
       - csge-network
   
   backend:
-    image: dataloplatforms/csge-backend-minio:1.0.9
+    image: dataloplatforms/csge-backend-minio:ARM-1.0.9
     ports:
       - "4000:4000"
     env_file:
